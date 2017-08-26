@@ -149,7 +149,7 @@ Example:
     ctx.enableOther = true;
   });
 
-  add('my-task-2', { enabled: ()  }, (ctx, task) => {
+  add('my-task-2', { }, (ctx, task) => {
     if (ctx.input === 'skip') {
       task.skip('reason');
     }
