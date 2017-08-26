@@ -127,8 +127,8 @@ Example:
 
 ```js
 ...
-console.log(ctx.name);
-// Logs name input to the console.
+	console.log(ctx.name);
+	// Logs name input to the console.
 ...
 ```
 
