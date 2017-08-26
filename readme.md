@@ -173,7 +173,7 @@ Options for `listr`. [Learn more](https://github.com/SamVerschueren/listr/blob/m
 
 Type: `function`
 
-Where you should do your stuff.
+You should do your stuff here.
 
 [Learn more](https://github.com/SamVerschueren/listr/blob/master/readme.md#usage)
 
