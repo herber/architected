@@ -1,0 +1,16 @@
+{
+  "name": "architected-example-basic",
+  "version": "0.0.0",
+  "description": "Basic example for architected",
+  "license": "MIT",
+  "repository": "tobihrbr/architected",
+  "bin": "./index.js",
+  "author": {
+    "name": "Tobias Herber",
+    "email": "tobihrbr@gmail.com",
+    "url": "tobihrbr.com"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
