@@ -1,0 +1,56 @@
+{
+  "name": "architected",
+  "version": "1.0.0",
+  "description": "A tool for cli utilities.",
+  "license": "MIT",
+  "repository": "tobihrbr/architected",
+  "author": {
+    "name": "Tobias Herber",
+    "email": "tobihrbr@gmail.com",
+    "url": "tobihrbr.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "ava",
+    "lint": "fyi"
+  },
+  "files": [
+    "lib"
+  ],
+  "fyi": {
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  },
+  "keywords": [
+    "cli",
+    "tool",
+    "util",
+    "utility",
+    "prompt",
+    "input",
+    "args",
+    "argv",
+    "argc",
+    "arguments",
+    "simple",
+    "boilerplate",
+    "build"
+  ],
+  "dependencies": {
+    "argi": "^1.0.2",
+    "conf": "^1.1.2",
+    "inquirer": "^3.2.2",
+    "listr": "^0.12.0",
+    "listr-render-builder": "^0.1.0",
+    "only": "0.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "delay": "^2.0.0",
+    "fyi": "^1.0.1",
+    "zen-observable": "^0.5.2"
+  }
+}
