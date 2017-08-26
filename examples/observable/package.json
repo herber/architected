@@ -1,0 +1,20 @@
+{
+  "name": "architected-example-observable",
+  "version": "0.0.0",
+  "description": "Observable example for architected",
+  "license": "MIT",
+  "repository": "tobihrbr/architected",
+  "bin": "./index.js",
+  "author": {
+    "name": "Tobias Herber",
+    "email": "tobihrbr@gmail.com",
+    "url": "tobihrbr.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "delay": "^2.0.0",
+    "zen-observable": "^0.5.2"
+  }
+}
