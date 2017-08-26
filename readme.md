@@ -161,7 +161,7 @@ Example:
 
 Type: `string`
 
-The name of your task will be used for logging.
+The name of your task. Will be used for logging.
 
 ##### options
 
