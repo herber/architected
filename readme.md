@@ -97,7 +97,7 @@ What the user input should be called. You need this to get the value of the user
 
 - alias <br /> Type: `string`, `array` <br /> Alternative name(eg. a short version). <br /> Only for arguments.
 
-- hidden <br /> Type: `boolean` <br /> Whether the user input should be displayed in `--help`. <br /> Only for arguments.
+- hidden <br /> Type: `boolean` <br /> Specify if the input should be displayed in `--help`. <br /> Only for arguments.
 
 - type <br /> Type: `string` <br /> Type of the user input, can be `input`, `confirm`, `list`, `rawlist`, `expand`, `checkbox`, `password`, `editor`. <br /> Only for prompt. <br /> [Learn more](https://github.com/SBoudrias/Inquirer.js/blob/master/README.md#question)
 
