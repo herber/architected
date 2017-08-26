@@ -81,7 +81,7 @@ Custom arguments. You should only change this if you have to.
 
 User input you want to receive.
 
-##### name
+##### `name`
 
 Type: `object`
 
