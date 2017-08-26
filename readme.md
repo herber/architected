@@ -91,7 +91,7 @@ What the user input should be called. You need this to get the value of the user
 
 - default <br /> Type: every <br /> Will be used if the user does not specify a value.
 
-- save <br /> Type: every <br /> If set to `true` the user input will be saved and will be suggested next time the user executes your cli utility.
+- save <br /> Type: `boolean` <br /> If set to `true` the user input will be saved and will be suggested next time the user executes your cli utility.
 
 - boolean <br /> Type: `boolean` <br /> Force input to be either `true` or `false`. <br /> Only for arguments.
 
