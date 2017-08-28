@@ -1,4 +1,4 @@
-# Architected [![Codestyle fyi](https://img.shields.io/badge/code%20style-fyi-E91E63.svg)](https://github.com/tobihrbr/fyi) [![Build Status](https://travis-ci.org/tobihrbr/architected.svg?branch=master)](https://travis-ci.org/tobihrbr/architected) [![Build status](https://ci.appveyor.com/api/projects/status/5s1als83cubru51q?svg=true)](https://ci.appveyor.com/project/tobihrbr/architected) [![Greenkeeper badge](https://badges.greenkeeper.io/tobihrbr/architected.svg)](https://greenkeeper.io/)
+# Architected [![Codestyle fyi](https://img.shields.io/badge/code%20style-fyi-E91E63.svg)](https://github.com/tobihrbr/fyi) [![Build Status](https://travis-ci.org/tobihrbr/architected.svg?branch=master)](https://travis-ci.org/tobihrbr/architected) [![Build status](https://ci.appveyor.com/api/projects/status/5s1als83cubru51q?svg=true)](https://ci.appveyor.com/project/tobihrbr/architected)
 
 > A tool for cli utilities.
 
