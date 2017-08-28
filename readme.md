@@ -4,7 +4,7 @@
 
 ## About
 
-Architected is a small wrapper around [inquirer](https://github.com/SBoudrias/Inquirer.js/), [listr](https://github.com/samverschueren/listr) and [argi](https://github.com/tobihrbr/argi). It seamlessly manages arguments, user input, tasks and logging.
+Architected is a small wrapper around [inquirer](https://github.com/SBoudrias/Inquirer.js/), [listr](https://github.com/samverschueren/listr) and [argi](https://github.com/tobihrbr/argi). It seamlessly manages arguments, user input, tasks.
 
 ## Install
 
