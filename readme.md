@@ -15,6 +15,8 @@ $ npm install --save architected
 ## Usage
 
 ```js
+const architected = require('architected');
+
 const config = {
   // Configuration for architected
   config: {
@@ -30,9 +32,7 @@ const config = {
   }
 }
 
-const architected = require('architected')(config);
-
-architected.then((result) => {
+architected(config).then((result) => {
   const { run, add } = result;
 
   // Add a task
@@ -199,7 +199,9 @@ Custom context. Will be `Object.assign`ed to the user input.
 const { writeFileSync, mkdirSync } = require('fs');
 const { join } = require('path');
 
-const architected = require('../../lib/')({
+const architected = require('architected');
+
+architected({
   config: {
     name: 'basic-example'
   },
@@ -219,9 +221,7 @@ const architected = require('../../lib/')({
       type: 'input'
     }
   }
-});
-
-architected.then((result) => {
+}).then((result) => {
   const { run, add } = result;
 
   add('generate package.json', (ctx, task) => {
@@ -262,7 +262,7 @@ architected.then((result) => {
 
 ### Observable
 
-> A simple node.js project boilerplate.
+> A simple node.js project boilerplate. Built using observables.
 
 ```js
 #!/usr/bin/env node
@@ -273,7 +273,9 @@ const { join } = require('path');
 const Observable = require('zen-observable');
 const delay = require('delay'); // For a cool effect
 
-const architected = require('../../lib/')({
+const architected = require('architected');
+
+architected({
   config: {
     name: 'observable-example'
   },
@@ -299,9 +301,7 @@ const architected = require('../../lib/')({
       boolean: true
     }
   }
-});
-
-architected.then((result) => {
+}).then((result) => {
   const { run, add } = result;
 
   add('generate files', (ctx, task) => (
