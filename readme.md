@@ -4,7 +4,7 @@
 
 ## About
 
-Architected is a small wrapper around [inquirer](https://github.com/SBoudrias/Inquirer.js/), [listr](https://github.com/samverschueren/listr) and [argi](https://github.com/tobihrbr/argi). It seamlessly manages arguments, user input and logging. You can spilt workloads into synchronous and asynchronous tasks.
+Architected is a small wrapper around [inquirer](https://github.com/SBoudrias/Inquirer.js/), [listr](https://github.com/samverschueren/listr) and [argi](https://github.com/tobihrbr/argi). It seamlessly manages arguments, user input, tasks and logging.
 
 ## Install
 
@@ -81,7 +81,7 @@ Custom arguments. You should only change this if you have to.
 
 User input you want to receive.
 
-##### name
+##### `name`
 
 Type: `object`
 
@@ -91,13 +91,13 @@ What the user input should be called. You need this to get the value of the user
 
 - default <br /> Type: every <br /> Will be used if the user does not specify a value.
 
-- save <br /> Type: every <br /> If set to `true` the user input will be saved and will be suggested next time the user executes your cli utility.
+- save <br /> Type: `boolean` <br /> If set to `true` the user input will be saved and will be suggested next time the user executes your cli utility.
 
 - boolean <br /> Type: `boolean` <br /> Force input to be either `true` or `false`. <br /> Only for arguments.
 
 - alias <br /> Type: `string`, `array` <br /> Alternative name(eg. a short version). <br /> Only for arguments.
 
-- hidden <br /> Type: `boolean` <br /> Whether the user input should be displayed in `--help`. <br /> Only for arguments.
+- hidden <br /> Type: `boolean` <br /> Specify if the input should be displayed in `--help`. <br /> Only for arguments.
 
 - type <br /> Type: `string` <br /> Type of the user input, can be `input`, `confirm`, `list`, `rawlist`, `expand`, `checkbox`, `password`, `editor`. <br /> Only for prompt. <br /> [Learn more](https://github.com/SBoudrias/Inquirer.js/blob/master/README.md#question)
 
@@ -127,8 +127,8 @@ Example:
 
 ```js
 ...
-console.log(ctx.name);
-// Logs name input to the console.
+	console.log(ctx.name);
+	// Logs name input to the console.
 ...
 ```
 
@@ -149,7 +149,7 @@ Example:
     ctx.enableOther = true;
   });
 
-  add('my-task-2', { enabled: ()  }, (ctx, task) => {
+  add('my-task-2', { }, (ctx, task) => {
     if (ctx.input === 'skip') {
       task.skip('reason');
     }
@@ -161,7 +161,7 @@ Example:
 
 Type: `string`
 
-The name of your task will be used for logging.
+The name of your task. Will be used for logging.
 
 ##### options
 
@@ -173,7 +173,7 @@ Options for `listr`. [Learn more](https://github.com/SamVerschueren/listr/blob/m
 
 Type: `function`
 
-Where you should do your stuff.
+You should do your stuff here.
 
 [Learn more](https://github.com/SamVerschueren/listr/blob/master/readme.md#usage)
 
