@@ -29,6 +29,13 @@ const config = {
       default: 'My default',
       type: 'input'
     }
+  },
+  // Cli commands
+  commands: {
+    name: {
+      message: 'A short description',
+      hidden: false
+    }
   }
 }
 
@@ -77,9 +84,51 @@ Default: `process.argv.slice(2)`
 
 Custom arguments. You should only change this if you have to.
 
+#### commands
+
+Commands passed as arguments.
+
+Example:
+
+Terminal:
+
+```bash
+my-app init
+```
+
+Code:
+
+```js
+const architected = require('architected');
+
+const config = {
+  config: {
+    name: 'my app'
+  },
+  commands: {
+    init: {
+      message: 'Add readme.md file'
+    }
+  }
+}
+
+architected(config).then((result) => {
+  const { run, add, ctx } = result;
+
+  // User called init
+  if (ctx.init) {
+    add('init stuff', (ctx, task) => {
+
+    });
+  }
+
+  run()
+})
+```
+
 #### input
 
-User input you want to receive.
+Input you want to receive.
 
 ##### `name`
 

@@ -8,6 +8,13 @@ ava('parses cli args', t =>
   })
 );
 
+ava('adds tasks', t =>
+  architected({ config: { args: ['testarch', '--str', 'value'], name: 'arc-exm-001' }, input: { str: { message: 'none' } }, commands: { testarch: { message: 'none' } } }).then(result => {
+    t.is(result.ctx.testarch, true);
+    t.is(result.ctx.str, 'value');
+  })
+);
+
 ava('executes tasks', t =>
   architected({ config: { name: 'arc-exm-002', args: ['--test'] }, input: { test: { boolean: true, message: 'none' } } })
     .then(result => {
