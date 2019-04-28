@@ -42,7 +42,7 @@
   ],
   "dependencies": {
     "argi": "^1.0.2",
-    "conf": "^1.1.2",
+    "conf": "^4.0.2",
     "inquirer": "^3.2.2",
     "listr": "^0.14.0",
     "listr-render-builder": "^0.1.0",
