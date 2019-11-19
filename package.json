@@ -52,6 +52,6 @@
     "ava": "^0.24.0",
     "delay": "^2.0.0",
     "fyi": "^1.0.1",
-    "zen-observable": "^0.6.1"
+    "zen-observable": "^0.8.15"
   }
 }
